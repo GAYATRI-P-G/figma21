@@ -1,3 +1,6 @@
+ /*************sidebar styling*******************/
+    
+    
 .sidebar {
     width: 293px;
     height: 1019px;
@@ -15,6 +18,7 @@
 body {
     font-family: inter;
     margin: 0;
+    max-width: fit-content;
     padding: 0;
 }
 
@@ -31,6 +35,7 @@ body {
     
 
 }
+
 
 .sidebar a {
     text-decoration: none;
@@ -63,27 +68,6 @@ body {
     border: none;
 }
 
-/* #id{
-    display: flex;
-    padding-left:30px ;
-    padding-bottom: 40px;
-    
-
-
-}
-
-#id1{
-    background-color: transparent;
-    color:#fff;
-    width: 159px;
-    height: 32px;
-    gap: 0px;
-    opacity: 0px;
-    padding: auto;
-    appearance: none;
-
-
-} */
 .id {
     display: flex;
     align-items: center; 
@@ -107,10 +91,9 @@ body {
     color: #fff;
     padding-left: 10px;
 
-    /* Removes the outline when focused */
 }
 
-/* Optional: Additional styling to fine-tune the appearance */
+
 .id select option {
     padding: 5px; 
    
@@ -121,15 +104,15 @@ body {
         align-items: center;
         gap: 0;
         padding-left: 10px;
-        padding: 10px 20px; /* Adds padding inside the box */
+        padding: 10px 20px; 
         background-color: rgb(255, 255, 255,0.2); /* Semi-transparent black background */
-        border-radius: 8px; /* Softens the corners */
+        border-radius: 8px; 
         padding-left: 10px;
         opacity: 90%;
-        padding-top: 10px; /* Moves the button down */
-        padding-bottom: 10px; /* Moves the button up */
-        padding-left: 30px; /* Moves the button right */
-        padding-right: 50px; /* Moves the button left */
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        padding-left: 30px; 
+        padding-right: 50px; 
         margin-right:20px;
         margin-top: 40px;
         margin-left: 15px;
@@ -155,26 +138,22 @@ body {
        
        
     }
-/* #id2{
-    background-color: #0F1738;
-    color: white;
-    border: none;
-} */
+
 #id0 {
-    appearance: auto; /* This restores the default browser styling */
+    appearance: auto; 
    
 }
 
 
 #id1 select {
-    appearance: auto; /* This restores the default browser styling */
+    appearance: auto; 
    
 }
 li a {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
-    text-decoration: none; /* Removes the underline from the link */
-    gap: 10px; /* Optional: Adds space between the image and select */
+    align-items: center; 
+    text-decoration: none; 
+    gap: 10px; 
     padding-top: 20px;
     font-family: inter;
 }
@@ -190,10 +169,9 @@ li a select {
     padding: 0;
     border: none; /* Removes the border from the select */
     outline: none;
- /* Removes default dropdown styling */
-    background-color: transparent; /* Makes the background transparent */
-    font-size: 16px; /* Adjusts font size to match your design */
-    color: white; /* Change this color as needed */
+    background-color: transparent; 
+    font-size: 16px; 
+    color: white; 
 }
 
 li a{
@@ -227,11 +205,11 @@ li#mail select {
 .name-email-container {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; /* Space between the icon and the text */
+    margin-left: 10px; 
 }
 
 #mail select {
-    margin-bottom: 5px; /* Space between the select box and the email */
+    margin-bottom: 5px; 
     font-size: 14px;
     /* padding: 5px; */
 }
@@ -257,19 +235,16 @@ li#mail select {
 
 
 .sidefoot {
-    padding-top: 50px; /* Pushes the .sidefoot to the bottom */
-    padding-bottom: 30px; /* Optional: Adds some padding at the bottom */
+    padding-top: 50px; 
+    padding-bottom: 30px; 
 }
 
 .sidebar11 {
     list-style: none;
-    /* padding: 0;
-    margin: 0; */
+   
 }
 
-/* .sidebar11 li {
-     margin-bottom: 10px;
-} */
+
 
 .sidebar11 a {
     display: flex;
@@ -307,6 +282,7 @@ li#mail select {
 
 }
 
+/********************** second column styling *********************/
 
 .secondcontainer{
     /* padding-left: 10px; */
@@ -472,7 +448,7 @@ li#mail select {
 
     display: grid;
     grid-gap: 20px; /* Space between grid items */
-    justify-items: left; /* Center align the grid items */
+    justify-items: left; 
    
 }
 
@@ -554,7 +530,7 @@ li#mail select {
    
     font-size: 14px;
     color: #1F2937; /* Dark text color */
-    width: 33%; /* Each stat item takes up equal width */
+    width: 33%; 
     text-align: left;
 
 
@@ -677,15 +653,14 @@ li#mail select {
     margin-top: 20px;
 }
 
+
+/********************************* third column styling *************************/
 .thirdcontainer{
     display: flex;
     flex-direction: column;
     padding-left: 10px; 
     width: 900px;
     height: 889px;
-    /* top: 40px;
-    left: 756px;
-    gap: 0px; */
     opacity: 0px;
     position: absolute;
 }
@@ -857,7 +832,7 @@ li#mail select {
 
 
 }
-
+/******************** mobile response ********************/
 @media only screen and(max-width:786px){
 
   
@@ -940,17 +915,23 @@ li#mail select {
 }
 
 /* Show e-dashboard and hide sidebar on smaller screens */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 786px) {
     .e-dashboard {
         display: flex;
+    }
+
+    .e-dashboard h1 a{
+        text-decoration: none;
+        color: white;
     }
     .sidebar {
         transform: translateX(-100%);
     }
     #dashtext1 a {
-        text-decoration: none; /* Ensures no underline on small screens */
-        color: #fff; /* Ensures the color is white on small screens */
+        text-decoration: none; 
+        color: #fff; 
     }
+    
 }
 
 /* Sidebar content styling */
@@ -1057,14 +1038,14 @@ li#mail select {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center align child elements */
+      align-items: center; 
       background-color:white;
       /* position: relative; */
     }
 
 
 
-     /* Position elements using flexbox */
+     
   .gde {
     padding-left:650px;
     margin-left: 00px;/* Place gde first */
@@ -1092,6 +1073,11 @@ li#mail select {
     padding-left: 20px;
 
  }
+ .tasks-container{
+    display: none;
+}
+
+
 
 
   
@@ -1183,10 +1169,11 @@ li#mail select {
 
 
  
-  .task1-container {
+  .tasks-container {
     display: flex;
-    gap: 1rem; /* Adjust spacing as needed */
-    margin-top: -100px;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: -100px; */
   }
   
   .task-title {
@@ -1229,45 +1216,7 @@ li#mail select {
   .task2-status {
     transform: translate(10px,20px); /* Align status to the right */
   }
-  @media (max-width: 768px) {
-    .task1-container {
-      display: block;
-    }
-    .task3-status {
-        transform: translate(5px,1px); /* Align status to the right */
-      }
-    .task4-status {
-        transform: translate(10px,20px); /* Align status to the right */
-    }
-    .task-details {
-      display: block;
-    }
-
-    #t4{
-        transform: translate(10px,1700px);
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .task1-container {
-        display: none;
-    }
-}
-
-
-
-/*  
-@media screen and (min-width: 768px) {
-    .transaction-history{
-        display: none;
-    }
-} */
-
-.transaction-history {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
+  
   
   /* Default styles */
   .transaction {
@@ -1301,22 +1250,156 @@ li#mail select {
     margin: 0;
   }
   
-  .view-all-button {
-    /* Add your button styles here */
-  }
+
   
-  /* Responsive styles */
-  @media screen and (min-width:768px) {
-    .transaction-history {
-       display: none;
+  
+
+/*************************** mobile response ***************/
+
+
+@media (max-width: 768px) {
+    body{
+    max-width: fit-content;
     }
-  }
-@media screen and (max-width:767px)
+    th{
+        display:none;
+    }
+    .maincontainer{
+        flex-direction: column;
+        
+    }  
     
-{
-    #tt {
-        color: red;
+  
+
+
+   
+    .tasks-container {
+          width: 100%;
+          overflow-x: none;
+          margin: 0;
      }
+    .thirdcontainer{
+        max-width: fit-content;
+    }
+    table {
+          width: fit-content;
+          table-layout: fixed; /* Ensures that the table fits within the container */
+          word-wrap: break-word; /* Allows content to wrap within the cells */
+          border-collapse: collapse;
+    }
+      
+    th, td {
+          padding: 8px;
+          font-size: 14px; 
+          white-space: normal; /* Allows text to wrap to the next line */
+    }
+
+
+    td{
+        display: block;
+        
+    }
+
+    td:first-child{
+        padding-top: 2rem;
+    }
+    td:last-child{
+        padding-bottom: 2rem;
+    }
+    td::before{
+        /* content: attr(data-cell) " : "; */
+        font-weight: 700;
+        text-transform: capitalize;
+    } 
+
+    .tasks-container td:nth-of-type(1)::before{
+        content: "Task:" ;
+    }
+    .tasks-container td:nth-of-type(2)::before{
+        content: "Category:" ;
+    }
+    .tasks-container td:nth-of-type(3)::before{
+        content: "Due Date:" ;
+    }
+    .tasks-container td:nth-of-type(4)::before{
+        content: "Status:" ;
+    }
+
+    .payment-container{
+        transform: translate(10px,-154px);
+    }
+
+    .payment-container td:nth-of-type(1)::before{
+        content: "Transaction ID:" ;
+    }
+    .payment-container td:nth-of-type(2)::before{
+        content: "Date of transaction:" ;
+    }
+    .payment-container td:nth-of-type(3)::before{
+        content: "Amount:" ;
+    }
+    .payment-container td:nth-of-type(4)::before{
+        content: "Description:" ;
+    }
+    .payment-container td{
+        border-bottom: none;
+    }
+    .tasks-container td{
+        border-bottom: none;
+    }
+
+   
+
+    .maincontainer {
+        left: 0;
+        width: 100%;
+        height: auto;
+        top: 0;
+        opacity: 1;
+    }
+    .gde{
+        transform: translate(-140px, 5px);
+
+    }
+    
+    /* Adjust second container for mobile */
+    .secondcontainer {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        transform: translate(-180px, 30px);
+    }
+
+    /* Adjust the mailbox container for mobile */
+    .mailbox-container {
+        width: 100%;
+        transform: translate(60px, -50px);
+    }
+
+    /* Adjust legal container for mobile */
+    .legal-container {
+        width: 100%;
+        transform: translate(10px, -200px);
+        margin-top: 20px; 
+    }
+
+    /* Ensure table section is below the legal container in mobile */
+    .tasks-container {
+        width: 100%;
+        transform: translate(0, -220px);
+        margin-top: 20px; /* Add margin to create space between sections */
+    }
+    
+
+} 
+
+@media (min-width: 768px) {
+    .payment-history-section {
+        display: none;
+    }
 }
+
+
+
 
 

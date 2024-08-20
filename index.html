@@ -11,6 +11,7 @@
    
 </head>
 <body>
+ <!-- first column -->
 <div class="maincontainer">
 
 
@@ -19,7 +20,7 @@
             <img id="grain" src="image1/grain.svg" alt="Logo">
             <h1><a id="dashtext1" href="#">E-Dashboard</a></h1>
         </div>
-        <button class="hamburger" onclick="toggleSidebar()">
+        <button class="hamburger"id="hamburger" onclick="toggleSidebar()">
             <img id="menu" src="image1/menu.svg" alt="Menu">
         </button>
     </div>  
@@ -63,7 +64,7 @@
 
     
     </div>  
-
+<!-- second column -->
 <div class="secondcontainer">
         <div class="gde">
             <p id="gde">Good morning,<span class="bold"> Emily!</span><img src="image1/hands.svg" alt=""> </p>
@@ -167,13 +168,13 @@
     </div>
 </div>
 
-</div> 
+</div>  
 
 
-
+<!--  third column -->
 <div class="thirdcontainer">
     <div class="tasks-container">
-        <div class="tabs1">
+        <div class="tabs1"> 
             <h2><div>Tasks<a href="#">View all</a></div></h2>
         </div>
         <div class="tabs">
@@ -192,38 +193,38 @@
             </thead>
             <tbody>
                 <tr id="row1">
-                    <td>Update Tax Document <br>for Alphalinx...</td>
-                    <td>Compliance</td>
-                    <td>23/11/23</td>
-                    <td><span class="status request-sent">Request sent</span></td>
+                    <td data-cell="Task">Update Tax Document <br>for Alphalinx...</td>
+                    <td datacell="Category">Compliance</td>
+                    <td data-cell="Due date">23/11/23</td>
+                    <td data-cell="Status"><span class="status request-sent">Request sent</span></td>
                 </tr>
                 <tr>
-                    <td>Update KYC <br>document</td>
-                    <td>Compliance</td>
-                    <td>23/11/23</td>
-                    <td><span class="status request-sent">Request sent</span></td>
+                    <td data-cell="Task">Update KYC <br>document</td>
+                    <td datacell="Category">Compliance</td>
+                    <td data-cell="Due date">23/11/23</td>
+                    <td data-cell="Status"><span class="status request-sent">Request sent</span></td>
                 </tr>
                 <tr>
-                    <td>Add clearer photo for <br> visa application</td>
-                    <td>Visa center</td>
-                    <td>23/11/23</td>
-                    <td><span class="status pending-action">Pending action</span></td>
+                    <td data-cell="Task">Add clearer photo for <br> visa application</td>
+                    <td datacell="Category">Visa center</td>
+                    <td data-cell="Due date">23/11/23</td>
+                    <td data-cell="Status"><span class="status pending-action">Pending action</span></td>
                 </tr>
                 <tr>
-                    <td>Document not clear: <br>please add new file</td>
-                    <td>Visa center</td>
-                    <td>23/11/23</td>
-                    <td><span class="status pending-action">Pending action</span></td>
+                    <td data-cell="Task">Document not clear: <br>please add new file</td>
+                    <td datacell="Category">Visa center</td>
+                    <td data-cell="Due date">23/11/23</td>
+                    <td data-cell="Status"><span class="status pending-action">Pending action</span></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div class="payment-container">
-        <div class="payment-header">
+    <div class="payment-container  ">
+        <div class="payment-header ">
             <h2><div>Payment history<a href="#" class="view-all">View all</a></div></h2>
             
         </div>
-        <table class="payment-table">
+        <table  class="payment-table " id="payment">
             <thead>
                 <tr>
                     <th>Transaction ID</th>
@@ -234,195 +235,70 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>#764657758</td>
-                    <td>23/01/19</td>
-                    <td>$5.99</td>
-                    <td>Mailbox</td>
+                    <td data-label="Transaction ID">#764657758</td>
+                    <td data-label="Date">23/01/19</td>
+                    <td data-label="Amount">$5.99</td>
+                    <td data-label="Description">Mailbox</td>
                 </tr>
                 <tr>
-                    <td>#764657758</td>
-                    <td>22/01/19</td>
-                    <td>$99</td>
-                    <td>Registration (upgrade)</td>
+                    <td data-label="Transaction ID">#764657758</td>
+                    <td data-label="Date">22/01/19</td>
+                    <td data-label="Amount">$99</td>
+                    <td data-label="Description">Registration (upgrade)</td>
                 </tr>
                 <tr>
-                    <td>#764657758</td>
-                    <td>21/01/19</td>
-                    <td>$5.99</td>
-                    <td>Mailbox</td>
+                    <td data-label="Transaction ID">#764657758</td>
+                    <td data-label="Date">21/01/19</td>
+                    <td data-label="Amount">$5.99</td>
+                    <td data-label="Description">Mailbox</td>
                 </tr>
                 <tr>
-                    <td>#764657758</td>
-                    <td>19/01/19</td>
-                    <td>$5.99</td>
-                    <td>Mailbox</td>
+                    <td data-label="Transaction ID">#764657758</td>
+                    <td data-label="Date">19/01/19</td>
+                    <td data-label="Amount">$5.99</td>
+                    <td data-label="Description">Mailbox</td>
                 </tr>
                 <tr>
-                    <td>#764657758</td>
-                    <td>09/01/19</td>
-                    <td>$5.99</td>
-                    <td>Mailbox</td>
+                    <td data-label="Transaction ID">#764657758</td>
+                    <td data-label="Date">09/01/19</td>
+                    <td data-label="Amount">$5.99</td>
+                    <td data-label="Description">Mailbox</td>
                 </tr>
                 <tr>
-                    <td>#764657758</td>
-                    <td>23/12/18</td>
-                    <td>$5.99</td>
-                    <td>Mailbox</td>
+                    <td data-label="Description">#764657758</td>
+                    <td data-label="Date">23/12/18</td>
+                    <td data-label="Amount">$5.99</td>
+                    <td data-label="Description">Mailbox</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-
-    <div class="task1-container">
-        <div class="tasks-header">
-            <h2>Tasks</h2>
-            <a href="#">View all</a>
-        </div>
-        <div class="tasks-tabs">
-            <div class="task-tab active"><b>My tasks</b></div>
-            <div class="task-tab">Overdue</div>
-            <div class="task-tab">Assigned by me</div>
-        </div>
-        <div class="tasks-underline"></div>
-
-
-
-        <div class="task-title"><h4>Update Tax Document for Alphalinx...</h4></div>
-        <div class="task-details">
-          <div class="task-detail">
-            <div class="label" id="gray">Category</div>
-            <div class="value">Compliance</div>
-          </div>
-          <div class="task1-detail">
-            <div class="label" id="gray">Due date</div>
-            <div class="value">23/11/23</div>
-          </div>
-        </div>
-        <div class="task-status">
-        <div class="label" id="gray">Status</div>
-        <button class="status" id="gray">Request sent</button>
-        </div>
     
-
-        <div class="task-title"><h4>Update KYC document</h4></div>
-        <div class="task-details">
-          <div class="task-detail">
-            <div class="label" id="gray">Category</div>
-            <div class="value">Compliance</div>
-          </div>
-          <div class="task1-detail">
-            <div class="label" id="gray">Due date</div>
-            <div class="value">23/11/23</div>
-          </div>
-        </div>
-        <div class="task-status">
-        <div class="label" id="gray">Status</div>
-        <button class="status" id="gray">Request sent</button>
-        </div>
-        </div>
-
-
-        
-        <div class="task-title"><h4>Add clearer photo for visa application</h4></div>
-        <div class="task-details">
-          <div class="task-detail">
-            <div class="label" id="gray">Category</div>
-            <div class="value">Visa center</div>
-          </div>
-          <div class="task1-detail">
-            <div class="label" id="gray">Due date</div>
-            <div class="value">23/11/23</div>
-          </div>
-        </div>
-        <div class="task3-status">
-        <div class="label" id="gray">Status</div>
-        <button class="status" id="gray">Pending Action</button>
-        </div>
-        </div>
-        
-
-        <div id="t4">
-        <div class="task-title"><h4>Document not clear: please add new file</h4></div>
-        <div class="task-details">
-          <div class="task-detail">
-            <div class="label" id="gray">Category</div>
-            <div class="value">Visa center</div>
-          </div>
-          <div class="task1-detail">
-            <div class="label" id="gray">Due date</div>
-            <div class="value">23/11/23</div>
-          </div>
-        </div>
-        <div class="task4-status">
-        <div class="label" id="gray">Status</div>
-        <button class="status" id="gray">Pending Action</button>
-        </div>
-        </div>
-        </div>
-    </div>
-    <div class="transaction-history">
-        <h1 id="tt">Transaction History</h1>
-        <button class="view-all-button">View All</button>
-        
-        <div class="transaction">
-        <div class="t1">
-        <div class="transaction-id">#764657758</div>
-        <div class="transaction-date" id="gray">23/01/19</div>
-        </div>
-        <div class="transaction-amount">
-            <select id="amountSelect">
-                <option value="5.99">5.99</option>
-            </select>
-        </div>
-        <div class="transaction-description">
-        <p id="gray">Description:</p>
-        <p>Mailroom</p>
-        </div>
-        </div>
-        
-        <div class="transaction">
-            <div class="t1">
-            <div class="transaction-id">#764657758</div>
-            <div class="transaction-date" id="gray">23/01/19</div>
-            </div>
-            <div class="transaction-amount">
-                <select id="amountSelect">
-                    <option value="5.99">5.99</option>
-                </select>
-            </div>
-            <div class="transaction-description">
-            <p id="gray">Description:</p>
-            <p>Mailroom</p>
-            </div>
-        </div>
-        <div class="transaction">
-            <div class="t1">
-            <div class="transaction-id">#764657758</div>
-            <div class="transaction-date" id="gray">23/01/19</div>
-            </div>
-            <div class="transaction-amount">
-                <select id="amountSelect">
-                    <option value="5.99">5.99</option>
-                </select>
-            </div>
-            <div class="transaction-description">
-            <p id="gray">Description:</p>
-            <p>Mailroom</p>
-            </div>
-        </div>
-
-
-
-
-
-    </div>
-    
-
-
-
 
 </div>
+   
+
+
+
+        
+        
+
+
+    
+        
+
+
+
+
+
+
+    
+
+
+
+
+
 
 
 <SCRIPT>
@@ -431,6 +307,13 @@ function toggleSidebar() {
     sidebar.classList.toggle('active');
 }
 
+const hamburger = document.getElementById('hamburger');
+const edashboard = document.getElementById('dashtext');
+
+hamburger.addEventListener('click', () => {
+  // Toggle the visibility of the edashboard
+  dashtext.classList.toggle('hidden');
+});
 
 </SCRIPT>
 
